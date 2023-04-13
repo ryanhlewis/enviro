@@ -121,7 +121,156 @@ Now, we can see our height map in Unity!
 ![image](https://user-images.githubusercontent.com/76540311/231868908-cf20e5de-6280-4aaa-8a3d-36bf9bfb6a5f.png)
 
 
+
 ## Texturing Terrains
+
+At the top of Terrain Settings, we see a material slot.
+
+![image](https://user-images.githubusercontent.com/76540311/231870858-a1c774db-a243-4413-b64e-fdf5f782d80c.png)
+
+Change to SpatialMappingWireframe. This is just for fun!
+
+![image](https://user-images.githubusercontent.com/76540311/231890056-8210dab5-0e43-4e53-a89a-e260e09cb6be.png)
+
+Okay, now go back to Default-Terrain-Standard. Otherwise, our paint brushes are going to have a hard time.
+
+Now, let's head back to the "Terrain Tools" -> Brushes!
+
+This time, our brush is "Paint Texture".
+
+![image](https://user-images.githubusercontent.com/76540311/231890258-6ed3f3bc-d1ba-4857-8092-2f2d48020bc6.png)
+
+We will need a base layer! Choose the regions default color or pattern: rocks, sand, desert, grass..!
+
+Let's head to your nearest search engine and grab a "seamless texture", or if you're hardcore, just the color you want as a picture.
+
+Keywords like "low poly", "4k", "realistic", "game art" work especially well for finding certain textures.
+If you were at my [AIGameDev workshop], you probably know and can generate your own seamless game texture too!
+
+![image](https://user-images.githubusercontent.com/76540311/231891022-d76f71d0-a7b2-48a1-b2e9-cce108aba553.png)
+
+Drag your image into your Unity Assets.
+Now, we can "Create Layer". This will be our base layer, so choose the regions default color or pattern: rocks, sand, desert, grass..!
+
+![image](https://user-images.githubusercontent.com/76540311/231890381-cd423cb8-8c3f-4d0f-9948-4ff25392cfaf.png)
+![image](https://user-images.githubusercontent.com/76540311/231890355-8a9ef3f3-c347-4785-819c-da281fe98aa2.png)
+
+Now, everything's colored! Use the dropdown to open your texture and adjust tiling as neccessary near the bottom of the right panel.
+
+![image](https://user-images.githubusercontent.com/76540311/231891694-9c327431-a994-49ec-b81c-d18a1a5c1ca8.png)
+
+We can rinse and repeat, by adding another layer, but this time, since we're not "at the bottom" anymore, you won't see this layer appear.
+This layer instead will be on our brush, which we can click on the terrain to begin coloring in. Adjust opacity and size as need be!
+
+![image](https://user-images.githubusercontent.com/76540311/231891563-a8b81c17-b7a5-452f-8469-34a95fa37171.png)
+
+![image](https://user-images.githubusercontent.com/76540311/231891535-7acb8586-338c-4c74-ae0e-b1d45aa609a4.png)
+
+Yes, you can also "import textures" like we did with our height map from the internet, but make sure the texture corresponds to your height map!
+Afterwards, you would import it as your base layer, and adjust the tiling until it tiles as a once-over across your entire terrain.
+
+![image](https://user-images.githubusercontent.com/76540311/231892097-cafec05d-af89-4c30-a662-f43ff40f0404.png)
+
+If you really want to get into it, there are height maps and texture maps of anywhere in the world. You don't need to design the Kalahari~ import it! Here's an awesome resource for translating satellite images and height maps into your game's terrain: https://3d-mapper.com/heightmaps-and-textures/
+
+Note that the precision of our satellites isn't all too great, so unless you come across a drone-scanned texture or height map, your results might be pretty far off from "playable drop-in world" without tuning or adjusting a lot.
+
+
+## Trees 
+
+Finally, let's spawn in trees. Well, "trees". They can be anything, really. Mostly trees, although.
+
+In fact, let's do random things, just to prove a point.
+
+Go to New -> 3D Object -> Randomly Click Anything.
+
+Yes, anything! If you're feeling really brave, go import an fbx or obj file into Unity quickly. 
+(https://sketchfab.com/search?q=free&type=models) This will be crazy.
+
+![image](https://user-images.githubusercontent.com/76540311/231892656-d74a8dd8-3520-4559-927c-f5934d90ea14.png)
+
+Alright, drag the object from your scene or your browser into "Assets" in order to make it a preset gameobject.
+
+![image](https://user-images.githubusercontent.com/76540311/231892828-4867e0af-5764-4614-a2bb-bda581304df2.png)
+
+Now, head over to "Paint Trees" on our Terrain:
+
+![image](https://user-images.githubusercontent.com/76540311/231892885-1b1a986f-2687-458d-be80-9f1084bf2e2c.png)
+
+![image](https://user-images.githubusercontent.com/76540311/231892949-c16f51f2-6bea-4971-a348-7a7e340be024.png)
+![image](https://user-images.githubusercontent.com/76540311/231892975-ec8c2dea-e80d-48c8-b23f-82af723cf0d1.png)
+
+"Edit Trees" -> "Add Tree"
+
+Now, click the layer, and paint your scene as before! This time, we're spawning in millions of prefabs with our brush.
+
+![image](https://user-images.githubusercontent.com/76540311/231893384-3877002c-359e-4bef-83ec-24a1b3c8684c.png)
+
+The render distance is a little low. If you can handle it, go to "Terrain Settings", "Detail Objects", and max out all the render settings.
+
+![image](https://user-images.githubusercontent.com/76540311/231893724-5c86cca6-b25d-42cd-9d37-45a86ba391a9.png)
+
+Let's go wild. Back on the "Paint Trees" tab, click "Mass Place Trees".
+
+![image](https://user-images.githubusercontent.com/76540311/231893910-067ed613-3df9-46b6-bfab-7b163fbeb6e8.png)
+
+If you dared to choose anything other than a simple object for this task, watch out! Your computer will probably crash unless you
+turn this number way down!
+
+![image](https://user-images.githubusercontent.com/76540311/231894020-ecf6a8a4-4665-4eed-bdf7-7b99108ac144.png)
+
+"Generate!!!"
+
+![image](https://user-images.githubusercontent.com/76540311/231894100-55dcf86c-5698-4baf-89c4-bcaa98b07083.png)
+
+A perfect vista.
+
+Doing this with actual trees does work better, although. Here's a screenshot from a game I made awhile back using this exact technique:
+
+![image](https://user-images.githubusercontent.com/76540311/231894332-aed2359b-66fc-4d03-8b8a-c79ded1c56d8.png)
+
+Let's not go over "Paint Details" too much. It's the exact same thing, but details are more 2D cardboard cutouts, usually meant 
+for grass, flowers, and other simple ground things.
+
+Here's another screenshot from the same game, where I used "details" to texture all the grass. 
+
+![image](https://user-images.githubusercontent.com/76540311/231894680-693c066e-f694-4f27-a1b2-4a2769758e75.png)
+
+
+## General Environment
+
+Let's finally look at skyboxes and other light sources.
+
+On the top, go to "Window" -> "Rendering" -> "Lighting"
+
+![image](https://user-images.githubusercontent.com/76540311/231895404-ece2413c-01c7-424f-b081-cd9bde18313a.png)
+
+Now, on "Environment", set the values to anything and see the effect!
+
+![image](https://user-images.githubusercontent.com/76540311/231895532-9f37ae55-706a-402a-97c5-4b46e08b88f5.png)
+
+Fog really helps sell things. Here's my output:
+
+![image](https://user-images.githubusercontent.com/76540311/231895630-33469301-f9fd-4b30-a063-9812ad067887.png)
+
+If you want, you can import skyboxes and other assets and drop them in as easily as before.
+
+Let me put a free tree from Sketchfab in..
+
+![image](https://user-images.githubusercontent.com/76540311/231896088-3693cc7c-46be-4d3f-bcd8-142e0006033a.png)
+
+This is bad on purpose, trust me..
+
+Okay, now let's see the same tree after I stable diffusion it.
+
+
+
+
+
+
+
+
+
 
 
 
