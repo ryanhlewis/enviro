@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/76540311/231950396-ec719ae6-5718-4638-9130-b7295de7ff9d.png)
+
 We're making cool scenes today. Screenshot-worthy. Maybe use Stable Diffusion and make it into an actual painting after you're done. :)
 
 ## Introduction to Terrains
@@ -262,6 +264,10 @@ Let me put a free tree from Sketchfab in..
 This is bad on purpose, trust me..
 
 Okay, now let's see the same tree after I stable diffusion it.
+
+![image](https://user-images.githubusercontent.com/76540311/231925030-10a3bad1-a94a-4566-903d-48e51d65dec3.png)
+
+![image](https://user-images.githubusercontent.com/76540311/231950445-863282ce-612c-46c4-a08a-25b9e7511b9d.png)
 
 
 
